@@ -2,12 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header class="header">
+      <h1>Movie App</h1>
+      <form class="header__search-bar">
+        <input type="text" placeholder="Search Movie" name="title" required />
+        <button>
+          <img src="./assets/search.svg" alt="search icon" />
+        </button>
+      </form>
+    </header>
+    <main class="main"></main>
+    <footer class="footer">
+      <p>
+        Copyright © 2022 Prox2005
+        <a target="_blank" href="https://github.com/Prox2005/movie__app">
+          <img src="./assets/github.svg" alt="github logo" />
+        </a>
+      </p>
+    </footer>
+    <script defer src="/main.js"></script>
   </body>
 </html>
