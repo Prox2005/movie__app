@@ -13,6 +13,8 @@ async function request(movie) {
   );
 }
 
+request("superman");
+
 function renderMovies(movies) {
   cleanContainer();
   movies.map((movie) => {
